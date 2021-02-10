@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+
+const tasksList = ['Acordar', 'Tomar cafe', 'Trabalhar', 'Jogar Futebol', 'Dormir'];
 
 const task = (value) => {
   return (
@@ -9,23 +9,9 @@ const task = (value) => {
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        {task('xablau')}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ul>
+      {tasksList.map(item => task(item))}
+    </ul>
   );
 }
 
