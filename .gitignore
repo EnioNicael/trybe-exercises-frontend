@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/introducao-a-react_1
 /.pnp
 .pnp.js
 
