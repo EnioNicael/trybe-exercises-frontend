@@ -3,10 +3,10 @@ import Pokemon from './Pokemon';
 
 class Pokedex extends React.Component {
     render() {
-        const { pokemons, index } = this.props;
+        const { pokemons } = this.props;
         return (
             <div className="pokedex">
-                <Pokemon pokemon={pokemons[index]}/>
+                <Pokemon pokemon={pokemons} />
                 {/* {this.props.pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)} */}
             </div>
         );
