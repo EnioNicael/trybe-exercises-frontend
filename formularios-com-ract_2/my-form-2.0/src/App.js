@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import DadosPessoais from './DadosPessoais';
+import EmpregosAnteriores from './EmpregosAnteriores';
 
 class App extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class App extends React.Component {
     return (
       <form>
         <DadosPessoais />
+        <EmpregosAnteriores />
       </form>
     );
   }

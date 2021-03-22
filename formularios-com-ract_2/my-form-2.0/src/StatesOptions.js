@@ -2,9 +2,9 @@ import React from 'react';
 
 class StatesOptions extends React.Component {
   render() {
-    const { uf } = this.props;
+    const { key, value } = this.props.uf;
     return (
-      <option value={uf}>{uf}</option>
+      <option value={key}>{value}</option>
     );
   }
 }

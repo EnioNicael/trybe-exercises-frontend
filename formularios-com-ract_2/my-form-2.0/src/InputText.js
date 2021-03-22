@@ -2,12 +2,12 @@ import React from 'react';
 
 class InputText extends React.Component {
   render() {
-    const { label } = this.props;
+    const { label, limit } = this.props;
     return (
       <div>
         <label>
           {label}
-          <input type="text"/>
+          <input type="text" maxLength={limit} required />
         </label>
       </div>
     );
